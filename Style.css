@@ -1,0 +1,164 @@
+body {
+  background-image: 
+    linear-gradient(rgba(5, 0, 10, 0.75), rgba(10, 0, 20, 0.85)),
+    url("https://muralsyourway.vtexassets.com/arquivos/ids/394217-700-0?width=825&height=auto&aspect=true");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #e8d9ff;
+  font-family: Georgia, "Times New Roman", serif;
+  cursor: url("https://cur.cursors-4u.net/others/oth-8/oth704.cur"), auto;
+}
+
+/* Liens */
+a {
+  color: #c77dff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #b517ff, 0 0 15px #7209b7;
+}
+
+/* Boîte principale */
+.goth-profile {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(8, 0, 18, 0.88);
+  border: 2px solid #6a0dad;
+  border-radius: 20px;
+  box-shadow:
+    0 0 20px #240046,
+    inset 0 0 20px rgba(157, 78, 221, 0.25);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Image Banette */
+.banette-img {
+  width: 160px;
+  filter: drop-shadow(0 0 12px #c77dff);
+  animation: floatBanette 4s ease-in-out infinite;
+}
+
+@keyframes floatBanette {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Titre */
+.goth-profile h2 {
+  color: #f3e8ff;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 8px #9d4edd,
+    0 0 16px #5a189a;
+}
+
+/* Spoiler fan-art */
+.fanart-spoiler {
+  margin-top: 25px;
+  background: rgba(25, 0, 40, 0.85);
+  border: 1px solid #9d4edd;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.5);
+}
+
+.fanart-spoiler summary {
+  cursor: pointer;
+  color: #e0aaff;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.fanart-spoiler summary:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #c77dff;
+}
+
+.fanart-box {
+  margin-top: 15px;
+  padding: 15px;
+  border-top: 1px dashed #7b2cbf;
+}
+
+.fanart-box img {
+  max-width: 90%;
+  margin: 10px;
+  border-radius: 12px;
+  border: 2px solid #5a189a;
+  box-shadow: 0 0 12px rgba(199, 125, 255, 0.7);
+}
+
+/* Chauves-souris animées */
+.bat {
+  position: fixed;
+  top: 20%;
+  left: -80px;
+  font-size: 28px;
+  opacity: 0.7;
+  z-index: 1;
+  pointer-events: none;
+  animation-name: flyBat;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bat1 {
+  top: 15%;
+  animation-duration: 18s;
+  animation-delay: 0s;
+}
+
+.bat2 {
+  top: 35%;
+  font-size: 22px;
+  animation-duration: 24s;
+  animation-delay: 5s;
+}
+
+.bat3 {
+  top: 55%;
+  font-size: 30px;
+  animation-duration: 21s;
+  animation-delay: 9s;
+}
+
+.bat4 {
+  top: 75%;
+  font-size: 20px;
+  animation-duration: 28s;
+  animation-delay: 2s;
+}
+
+@keyframes flyBat {
+  0% {
+    transform: translateX(-100px) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(55vw) translateY(-40px) rotate(10deg);
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(110vw) translateY(20px) rotate(-10deg);
+    opacity: 0;
+  }
+}
